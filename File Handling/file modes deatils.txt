@@ -1,0 +1,55 @@
+r..Read, file must exist.
+w..write and create file if not exist an overwrite the content present in it.
+a..write but do not overwrite and create a file if it is not present.
+r+..Read and write do not create a file file must exist.
+w+..Read and write and create a file if it is not present and overwrite the content.
+a+..Read and write and do not overwrite the content and create a file if it is not exist.
+
+
+rb...These all works same as above but in case of binary only.
+wb...These all works same as above but in case of binary only.
+ar...These all works same as above but in case of binary only.
+wb+...These all works same as above but in case of binary only.
+rb+...These all works same as above but in case of binary only.
+ab+...These all works same as above but in case of binary only.
+
+FILE *fp....syntax
+
+FILE--
+It is a structure defined in stdio.h and object of file type contain file related information like-
+1..Mode of opening
+2..size of file
+3..current file pointer
+4..pointer to associated buffer
+if any (read/write)
+5..An error indicator
+6.. an end of file indicator(EOF)
+
+EOF---IT is a macros defined in stdio.h and check whether End of file has reached.
+
+fopen---
+fopen function returns address of the file to the file object to the pointer variable and stores file realted 
+information in this file object.
+
+fclose---
+it performs 2 functions 
+first-buffer would be transferred to the file and write operation is carried out.
+2nd-buffer would be eliminated from the main memory and file gets closed. 
+
+
+getchar---to read a single character from the user via keyboard.
+
+fgetchar--it is not a part of c standard library.
+fputchar-- it is not a standard function in c language 
+
+putchar--write a single character to the output stream
+
+fgetc---to read a  single character from a file used in file i/o implementation.
+getc---same as fgetc but it is less safe in complex expressions.
+
+fscanf--- read same as scanf but its do not use stdin input from keyboard like scanf its is used to read
+formatted input from a file used in file i/o.
+
+putc and fputc works same both of them print a single character to a specified  output stream but fputc is
+more safer for big and complex programs.
+
